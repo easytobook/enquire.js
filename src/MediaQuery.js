@@ -13,7 +13,7 @@
 
         var self = this;
         this.listener = function(mql) {
-            self.mql = mql;
+            self.mql = mql.currentTarget;
             self.assess();
         };
         this.mql.addListener(this.listener);
